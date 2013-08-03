@@ -1,0 +1,11 @@
+--- old/sed-3.02/sed/sed.c	Fri Jul  3 01:06:26 1998
++++ gnu/sed-3.02/sed/sed.c	Mon Sep 17 21:54:22 2001
+@@ -129,6 +129,8 @@
+   flagT bad_input;	/* If this variable is non-zero at exit, one or
+ 			   more of the input files couldn't be opened. */
+ 
++  initialize_main(&argc, &argv);
++
+   POSIXLY_CORRECT = (getenv("POSIXLY_CORRECT") != NULL);
+ #ifdef STUB_FROM_RX_LIBRARY_USAGE
+   if (!rx_default_cache)

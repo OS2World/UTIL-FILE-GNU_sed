@@ -1,0 +1,36 @@
+--- old/sed-3.02/configure.in	Sun Aug  2 00:38:32 1998
++++ gnu/sed-3.02/configure.in	Sun Sep 23 00:48:02 2001
+@@ -6,6 +6,9 @@
+ AC_PROG_CC
+ AC_PROG_RANLIB
+ 
++AC_EXEEXT
++AC_OBJEXT
++
+ dnl Solaris 2.6 needs special compilation flags to support large files
+ dnl (i.e. files larger than 2 GB).
+ dnl This code frament taken from the configure.in file from patch-2.5.
+@@ -53,12 +56,12 @@
+ AC_TYPE_SIZE_T
+ 
+ AC_MSG_CHECKING(which regex library to use)
+-ac_regex_lib=lib/regex.o
++ac_regex_lib=lib/regex.$ac_objext
+ AC_ARG_WITH(regex,
+    [  --with-regex=REGEX-LIB  specify an alternative regex implementation],
+    [case "$withval" in yes|no) ;; *) ac_regex_lib="$withval" ;; esac])
+ case "$ac_regex_lib" in
+-  lib/regex.o) LIBOBJS="$LIBOBJS regex.o" ;;
++  lib/regex.$ac_objext) LIBOBJS="$LIBOBJS regex.$ac_objext" ;;
+   ""|no) ;;
+   *) LIBS="$LIBS $ac_regex_lib" ;;
+ esac
+@@ -68,7 +71,7 @@
+ esac
+ 
+ case " $LIBOBJS " in
+-  *\ regex.o\ *)
++  *\ regex.$ac_objext\ *)
+     ac_cv_func_regnexec=yes
+     ac_cv_func_regexec=yes
+     cat >> confdefs.h <<\EOF

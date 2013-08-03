@@ -1,0 +1,329 @@
+/* config_h.in.  Generated automatically from configure.in by autoheader.  */
+/* PACKAGE name */
+#undef PACKAGE
+
+/* Package VERSION number */
+#undef VERSION
+
+/* Use lib/regex-gnu.h header (in preference to system's <regex.h>) */
+#undef USE_REGEX_GNU_H
+
+/* have the regexec() function */
+#undef HAVE_REGEXEC
+
+/* have the regnexec() function */
+#undef HAVE_REGNEXEC
+
+#include<stdlib.h>
+
+#include<errno.h>
+
+/* Define to one of `_getb67', `GETB67', `getb67' for Cray-2 and Cray-YMP
+   systems. This function is required for `alloca.c' support on those systems.
+   */
+#undef CRAY_STACKSEG_END
+
+/* Define if using `alloca.c'. */
+#undef C_ALLOCA
+
+/* EMX needs _chdir2() */
+#undef EMX_REPLACE_CHDIR
+
+/* EMX needs _getcwd2() */
+#undef EMX_REPLACE_GETCWD
+
+/* Define if you have `alloca', as a function or macro. */
+#undef HAVE_ALLOCA
+
+/* Define if you have <alloca.h> and it should be used (not on Ultrix). */
+#undef HAVE_ALLOCA_H
+
+/* Define if you have the `bcopy' function. */
+#undef HAVE_BCOPY
+
+/* Define if you have the `bzero' function. */
+#undef HAVE_BZERO
+
+/* Define if you have the `chdir' function. */
+#undef HAVE_CHDIR
+
+/* Define if you have the `chown' function. */
+#undef HAVE_CHOWN
+
+/* Define if you don't have `vprintf' but do have `_doprnt.' */
+#undef HAVE_DOPRNT
+
+/* Define if you have the `fchown' function. */
+#undef HAVE_FCHOWN
+
+/* Define if you have the `getcwd' function. */
+#undef HAVE_GETCWD
+
+/* Define if you have the `getpagesize' function. */
+#undef HAVE_GETPAGESIZE
+
+/* Define if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Define if you have the `isascii' function. */
+#undef HAVE_ISASCII
+
+/* Define if you have the `isatty' function. */
+#undef HAVE_ISATTY
+
+/* Define if you have the `lchown' function. */
+#undef HAVE_LCHOWN
+
+/* Define if you have the `cposix' library (-lcposix). */
+#undef HAVE_LIBCPOSIX
+
+/* Define if you have the <limits.h> header file. */
+#undef HAVE_LIMITS_H
+
+/* Define if you have the `link' function. */
+#undef HAVE_LINK
+
+/* Define if you have the `lstat' function. */
+#undef HAVE_LSTAT
+
+/* Define if you have the `memchr' function. */
+#undef HAVE_MEMCHR
+
+/* Define if you have the `memcmp' function. */
+#undef HAVE_MEMCMP
+
+/* Define if you have the `memcpy' function. */
+#undef HAVE_MEMCPY
+
+/* Define if you have the `memmove' function. */
+#undef HAVE_MEMMOVE
+
+/* Define if you have the <memory.h> header file. */
+#undef HAVE_MEMORY_H
+
+/* Define if you have the `mkfifo' function. */
+#undef HAVE_MKFIFO
+
+/* Define if you have the `mknod' function. */
+#undef HAVE_MKNOD
+
+/* Define if you have a working `mmap' system call. */
+#undef HAVE_MMAP
+
+/* Define if you have the <os2.h> header file. */
+#undef HAVE_OS2_H
+
+/* Define if you have the `readlink' function. */
+#undef HAVE_READLINK
+
+/* Define if you have the `regexec' function. */
+#undef HAVE_REGEXEC
+
+/* Define if you have the <regex.h> header file. */
+#undef HAVE_REGEX_H
+
+/* Define if you have the `regnexec' function. */
+#undef HAVE_REGNEXEC
+
+/* Define if you have the `stat' function. */
+#undef HAVE_STAT
+
+/* Define if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define if you have the `strcasecmp' function. */
+#undef HAVE_STRCASECMP
+
+/* Define if you have the `strerror' function. */
+#undef HAVE_STRERROR
+
+/* Define if you have the `stricmp' function. */
+#undef HAVE_STRICMP
+
+/* Define if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define if you have the `strncasecmp' function. */
+#undef HAVE_STRNCASECMP
+
+/* Define if you have the `strnicmp' function. */
+#undef HAVE_STRNICMP
+
+/* Define if you have the `symlink' function. */
+#undef HAVE_SYMLINK
+
+/* Define if you have the `sync' function. */
+#undef HAVE_SYNC
+
+/* Define if you have the <sys/nls.h> header file. */
+#undef HAVE_SYS_NLS_H
+
+/* Define if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* Define if you have the `vprintf' function. */
+#undef HAVE_VPRINTF
+
+/* Define if you have the `_chdir2' function. */
+#undef HAVE__CHDIR2
+
+/* Define if you have the `_getcwd2' function. */
+#undef HAVE__GETCWD2
+
+/* Define if you have the `_nls_init' function. */
+#undef HAVE__NLS_INIT
+
+/* Define if you have the `_response' function. */
+#undef HAVE__RESPONSE
+
+/* Define if you have the `_wildcard' function. */
+#undef HAVE__WILDCARD
+
+/* Name of package */
+#undef PACKAGE
+
+/* If using the C implementation of alloca, define if you know the
+   direction of stack growth for your system; otherwise it will be
+   automatically deduced at run-time.
+        STACK_DIRECTION > 0 => grows toward higher addresses
+        STACK_DIRECTION < 0 => grows toward lower addresses
+        STACK_DIRECTION = 0 => direction of growth unknown */
+#undef STACK_DIRECTION
+
+/* Define if you have the ANSI C header files. */
+#undef STDC_HEADERS
+
+/* Version number of package */
+#undef VERSION
+
+/* Define if on AIX 3.
+   System headers sometimes define this.
+   We just want to avoid a redefinition error message.  */
+#ifndef _ALL_SOURCE
+# undef _ALL_SOURCE
+#endif
+
+/* If libc does not support chown(), replace it by a dummy function */
+#if !HAVE_CHOWN && !defined chown
+static inline int replace_chown(x,y,z) { errno = EPERM; return -1; }
+#define chown(x,y,z) replace_chown(x,y,z)
+#endif
+
+/* If libc does not support fchown(), replace it by a dummy function */
+#if !HAVE_FCHOWN && !defined fchown
+static inline int replace_fchown(x,y,z) { errno = EPERM; return -1; }
+#define fchown(x,y,z) replace_fchown(x,y,z)
+#endif
+
+/* If libc does not support lchown(), replace it by chown */
+#if !HAVE_LCHOWN && !defined lchown
+static inline int replace_lchown(x,y,z) { errno = EPERM; return -1; }
+#define lchown(x,y,z) replace_lchown(x,y,z)
+#endif
+
+/* If libc does not support link(), replace it by a dummy function */
+#if !HAVE_LINK && !defined link
+static inline int replace_link(x,y) { errno = EPERM; return -1; }
+#define link(x,y) replace_link(x,y)
+#endif
+
+/* If libc does not support lstat(), replace it by stat() (EMX only) */
+#if !HAVE_LSTAT && HAVE_STAT && !defined lstat
+# define lstat(x, y) stat(x, y)
+#endif
+
+/* If libc does not support mkfifo(), replace it by a dummy function */
+#if !HAVE_MKFIFO && !defined mkfifo
+static inline int replace_mkfifo(x,y) { errno = EPERM; return -1; }
+#define mkfifo(x,y) replace_mkfifo(x,y)
+#endif
+
+/* If libc does not support mknod(), replace it by a dummy function */
+#if !HAVE_MKNOD && !defined mknod
+static inline int replace_mknod(x,y,z) { errno = EPERM; return -1; }
+#define mknod(x,y,z) replace_mknod(x,y,z)
+#endif
+
+/* If libc does not support readlink(), replace it by a dummy function */
+#if !HAVE_READLINK && !defined readlink
+static inline int replace_readlink(x,y,z) { errno = EPERM; return -1; }
+#define readlink(x,y,z) replace_readlink(x,y,z)
+#endif
+
+/* Replace strcasecmp() by stricmp() if necessary (EMX only) */
+#if !HAVE_STRCASECMP && HAVE_STRICMP && !defined strcasecmp
+# define strcasecmp(x,y) stricmp(x,y)
+#endif
+
+/* Replace strncasecmp() by strnicmp() if necessary (EMX only) */
+#if !HAVE_STRNCASECMP && HAVE_STRNICMP && !defined strncasecmp
+# define strncasecmp(x,y,z) strnicmp(x,y,z)
+#endif
+
+/* If libc does not support symlink(), replace it by a dummy function */
+#if !HAVE_SYMLINK && !defined symlink
+static inline int replace_symlink(x,y) { errno = EPERM; return -1; }
+#define symlink(x,y) replace_symlink(x,y)
+#endif
+
+/* If libc does not support sync(), replace it by an empty macro */
+#if !HAVE_SYNC && !defined sync
+#define sync() {}
+#endif
+
+#if HAVE__RESPONSE && defined __EMX__
+# define _EMX_RESPONSE(a, b) _response(a, b)
+#else
+# define _EMX_RESPONSE(a, b)
+#endif
+
+#if HAVE__WILDCARD && defined __EMX__
+# define _EMX_WILDCARD(a, b) _wildcard(a, b)
+#else
+# define _EMX_WILDCARD(a,, b)
+#endif
+
+#if HAVE_SYS_NLS_H && HAVE__NLS_INIT
+#include<sys/nls.h>
+# define TOUPPER(x) _nls_toupper(x)
+# define TOLOWER(x) _nls_tolower(x)
+#endif
+
+#if (HAVE__RESPONSE || HAVE__WILDCARD) && !defined initialize_main
+# define initialize_main(pargc, pargv) { \
+_EMX_RESPONSE(pargc, pargv); _EMX_WILDCARD(pargc, pargv); }
+#endif
+
+/* Define if on MINIX. */
+#undef _MINIX
+
+/* Define if the system does not provide POSIX.1 features except with this
+   defined. */
+#undef _POSIX_1_SOURCE
+
+/* Define if you need to in order for `stat' and other things to work. */
+#undef _POSIX_SOURCE
+
+/* Replace chdir() by _chdir2() if necessary (EMX only) */
+#if defined EMX_REPLACE_CHDIR && !defined chdir
+#define chdir replace_chdir
+static inline int replace_chdir(const char *name) { return _chdir2(name); }
+#endif
+
+/* Define to empty if `const' does not conform to ANSI C. */
+#undef const
+
+/* Replace getcwd() by _getcwd2() if necessary (EMX only) */
+#if defined EMX_REPLACE_GETCWD && !defined getcwd
+#define getcwd replace_getcwd
+static inline char* replace_getcwd(char *buffer, size_t size) { return _getcwd2(buffer, size); }
+#endif
+
+/* Define to `unsigned' if <sys/types.h> does not define. */
+#undef size_t

@@ -1,0 +1,123 @@
+Installation instructions for sed 3.02 (OS/2)
+
+Make sure you have installed the software required to configure, compile
+and install GNU software packages (See README.OS2 section I. for details).
+Prepare your shell for the configuration process (See README.OS2 section
+II. for details).
+
+
+I. Short installation instructions
+
+The following packages must have been installed before:
+
+- regex 0.12 (libregex-0_12.zip)
+
+
+If you want to recreate your configuration files (for developers only)
+you must have installed autoconf 2.50 and automake 1.4p5.
+Enter the following:
+
+export EMXSHELL=ksh
+aclocal
+automake
+autoconf
+autoheader
+
+
+If you want to install this software into subdirectories of x:/usr
+enter the following:
+
+
+a) If you choose large, statically linked, DOS/OS/2 combined executables:
+
+   - (optional, only if you want to install support for some languages
+     but not for all, see README.OS2 for details)
+     export LINGUAS="en de fr"
+     This will install only "de" and "fr" ("en" is the default)
+
+   - CFLAGS="-O2 -s -Zmt -D__ST_MT_ERRNO__"
+     ./configure --prefix=x:/usr --with-regex=-lregex
+
+   - make
+
+   - make install
+
+
+
+b) If you choose smaller, dynamically linked, compressed, OS/2 only executables:
+
+   - (optional, only if you want to install support for some languages
+     but not for all, see README.OS2 for details)
+     export LINGUAS="en de fr"
+
+   - Enter the following lines:
+     CFLAGS="-Zomf -O2 -s -Zmt -D__ST_MT_ERRNO__"
+     LDFLAGS="-Zcrtdll -Zlinker /exepack:2 -Zlinker /pm:vio"
+     RANLIB="echo"     
+     ./configure --prefix=x:/usr --with-regex=-lregex
+
+     if you're using gcc/pgcc 2.95 or higher you may want to set also
+     LIBS="-lgcc"
+     Then your program will not require the compiler dependent library gcc????m.dll
+     but your executable may (or may not) increase in size.
+
+   - make AR=emxomfar
+
+   - make install
+
+
+   Now some executables have been installed into x:/usr/bin
+   and some other files into subdirectories of x:/usr
+   Add x:\usr\bin to your PATH
+   Add x:/usr/man to your MANPATH
+   Add x:/usr/info to your INFOPATH
+
+
+
+II. Installation of sed 3.02 from the original GNU source:
+
+1. Download the autoconf package from ftp://ftp.gnu.org/gnu/sed/.
+   Apply the patches from diff-patches/*.
+   Replace mkinstalldirs by an OS/2 compatible version.
+   Replace config.guess, config.sub by a newer version.
+
+2. EMXSHELL=ksh
+   aclocal
+   automake
+   autoconf
+   autoheader
+
+3. Proceed with the normal installation process in section II.
+
+
+
+III. Uninstallation
+
+1. Configure the package as normal if not already done.
+
+2. To remove all previous installed files, enter:
+
+   make uninstall
+
+
+
+IV. Special notes:
+
+1. Additionally to the original GNU package sed-3_02_tar.gz this
+   special OS/2 patch contains the following files:
+
+   INSTALL.OS2
+   README.OS2
+   diff-patches/*
+
+2. Some paths may be linked into the executables. If you move some of the
+   files from this package to another location you may have to reinstall
+   the whole package.
+
+3. This version of sed doesn't support NLS, because there isn't any stable
+   version with NLS support yet.
+
+--
+
+Maintainer: Andreas Buening, <andreas.buening@nexgo.de>
+

@@ -1,0 +1,17 @@
+--- old/sed-3.02/sed/basicdefs.h	Sat Jul  4 14:25:44 1998
++++ gnu/sed-3.02/sed/basicdefs.h	Mon Sep 17 21:55:34 2001
+@@ -111,5 +111,14 @@
+ #define ISUPPER(c) (ISASCII (c) && isupper (c))
+ #define ISXDIGIT(c) (ISASCII (c) && isxdigit (c))
+ 
++#ifndef initialize_main
++# ifdef __EMX__
++#  define initialize_main(argcp, argvp) \
++  { _response(argcp, argvp); _wildcard(argcp, argvp); }
++# else /* NOT __EMX__ */
++#  define initialize_main(argcp, argvp)
++# endif
++#endif
++
+ 
+ #endif /*!BASICDEFS_H*/
